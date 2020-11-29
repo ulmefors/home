@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/09/11/ml-self-driving-cars-behavioral-cloning.html</loc>
+<lastmod>2017-09-11T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/09/12/ml-self-driving-cars-high-performance-nn.html</loc>
+<lastmod>2017-09-12T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://ulmefors.github.io/home/imperial-college-london/northvolt/gigafactory/2019/12/20/imperial-college-northvolt-gigascale-manufacture.html</loc>
 <lastmod>2019-12-20T00:00:00-06:00</lastmod>
 </url>
