@@ -1,11 +1,20 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden 🇸🇪.
 
+### Interests - for fun and profit
 
+* Renewable energy
+* Li-ion batteries
+* Data science
+* Machine learning
+* Education
+* Investing (buy and hold good companies - don't compete with robots!)
+* Reading
+* Languages
+* Espresso (mostly fun - definitely negative profit!)
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
