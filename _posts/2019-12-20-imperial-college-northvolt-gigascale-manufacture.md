@@ -1,7 +1,7 @@
 ---
 layout: post
 description: The Northvolt story so far, and what will happen next.
-categories: [imperial-college-london, northvolt, gigafactory]
+categories: [imperial-college-london, northvolt, gigafactory, youtube]
 title: Imperial College talk on Northvolt Giga-scale manufacture
 ---
 
