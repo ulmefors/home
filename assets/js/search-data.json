@@ -14,10 +14,10 @@
     
         ,"post1": {
             "title": "Foo Café talk on improving neural network performance",
-            "content": "On 9 May 2017 I was invited to Foo Café Malmö to give a second talk on Machine Learning approaches for Self-Driving Cars. This talk builds upon the prior Behavioral Cloning talk and focuses on improving neural network performance. The recording is now available to watch on YouTube. . . How do we achieve high performance Neural Networks for Self-Driving Cars? We will consider frequently encountered obstacles and proven solutions. This event builds on the Behavorial Cloning presentation from 20 April 2017 and will be more technical. We will explain data manipulation, neural network tricks, and computer vision to unlock better performance without collecting more data. This presentation will be friendly but may contain mathematics and code. You have been warned! .",
-            "url": "https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/09/12/ml-self-driving-cars-high-performance-nn.html",
-            "relUrl": "/foo-cafe/self-driving-cars/machine-learning/youtube/2017/09/12/ml-self-driving-cars-high-performance-nn.html",
-            "date": " • Sep 12, 2017"
+            "content": "On 9 May 2017 I was invited to Foo Café Malmö to give a second talk on Machine Learning for Self-Driving Cars. This talk builds upon the 20 April 2017 Behavioral Cloning talk and focuses on improving neural network performance. The recording is now available to watch on YouTube. . . Description . How do we achieve high performance Neural Networks for Self-Driving Cars? We will consider frequently encountered obstacles and proven solutions. This event builds on the Behavorial Cloning presentation from 20 April 2017 and will be more technical. We will explain data manipulation, neural network tricks, and computer vision to unlock better performance without collecting more data. This presentation will be friendly but may contain mathematics and code. You have been warned! .",
+            "url": "https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/05/09/ml-self-driving-cars-high-performance-nn.html",
+            "relUrl": "/foo-cafe/self-driving-cars/machine-learning/youtube/2017/05/09/ml-self-driving-cars-high-performance-nn.html",
+            "date": " • May 9, 2017"
         }
         
     
@@ -25,10 +25,10 @@
     
         ,"post2": {
             "title": "Foo Café talk on Behavioral Cloning",
-            "content": "In April 2017 I was invited to Foo Café Malmö to give a talk on Machine Learning approaches for Self-Driving Cars. This talk focused on the idea of Behavioral Cloning. The recording is now available to watch on YouTube. . . What are Convolutional Neural Networks and why are they popular in Deep Learning image recognition applications? We will compare modern Neural Networks to “classic” Machine Learning methods and thereby understand Behavioral Cloning. We will use Behavorial Cloning to teach a car to drive itself by copying human driver behavior. Don’t worry, we’ll drive in a simulator. Safety first! .",
-            "url": "https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/09/11/ml-self-driving-cars-behavioral-cloning.html",
-            "relUrl": "/foo-cafe/self-driving-cars/machine-learning/youtube/2017/09/11/ml-self-driving-cars-behavioral-cloning.html",
-            "date": " • Sep 11, 2017"
+            "content": "On 20 April 2017 I was invited to Foo Café Malmö to give a talk on Machine Learning for Self-Driving Cars. This talk focuses on Behavioral Cloning and the recording is now available to watch on YouTube. There is a follow-up video from the 9 May 2017 Neural Network Performance talk. . . Description . What are Convolutional Neural Networks and why are they popular in Deep Learning image recognition applications? We will compare modern Neural Networks to “classic” Machine Learning methods and thereby understand Behavioral Cloning. We will use Behavorial Cloning to teach a car to drive itself by copying human driver behavior. Don’t worry, we’ll drive in a simulator. Safety first! .",
+            "url": "https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/04/20/ml-self-driving-cars-behavioral-cloning.html",
+            "relUrl": "/foo-cafe/self-driving-cars/machine-learning/youtube/2017/04/20/ml-self-driving-cars-behavioral-cloning.html",
+            "date": " • Apr 20, 2017"
         }
         
     
