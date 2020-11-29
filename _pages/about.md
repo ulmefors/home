@@ -4,17 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden 🇸🇪
+Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 
 ### Interests for fun and profit
 
-* Renewable energy
-* Li-ion batteries
-* Data science
-* Machine learning
-* Education
-* Investing (buy and hold good companies - don't compete with robots!)
-* Reading
-* Languages
-* Espresso (almost always fun - definitely negative profit!)
+* Renewable energy :sunny::dash:
+* Li-ion batteries :battery:
+* Data science :bar_chart::microscope:
+* Machine learning :robot:
+* Technology :computer:
+* Education 🎓
+* Investing :chart_with_upwards_trend: (buy and hold - don't compete with robots!)
+* Reading :books:
+* Languages :sweden: :uk: :es: :fr:
+* Espresso :coffee: (almost always fun - definitely no profit!)
 
