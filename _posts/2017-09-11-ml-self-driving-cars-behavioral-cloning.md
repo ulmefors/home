@@ -1,0 +1,13 @@
+---
+layout: post
+description: Machine Learning for Self-Driving Cars
+categories: [foo-cafe, self-driving-cars, machine-learning, youtube]
+title: Foo Café talk on Behavioral Cloning
+---
+
+In April 2017 I was invited to [Foo Café Malmö](https://foocafe.org/) to give a talk on Machine Learning approaches for Self-Driving Cars. This talk focused on the idea of Behavioral Cloning. The recording is now available to watch on [YouTube](https://www.youtube.com/watch?v=NmdVVFj3SaA).
+
+[![Machine Learning for Self-Driving Cars: Behavioral Cloning](https://www.youtube.com/watch?v=NmdVVFj3SaA/0.jpg)](https://www.youtube.com/watch?v=NmdVVFj3SaA "Machine Learning for Self-Driving Cars: Behavioral Cloning ")
+
+*What are Convolutional Neural Networks and why are they popular in Deep Learning image recognition applications? We will compare modern Neural Networks to "classic" Machine Learning methods and thereby understand Behavioral Cloning. We will use Behavorial Cloning to teach a car to drive itself by copying human driver behavior. Don't worry, we'll drive in a simulator. Safety first!*
+
