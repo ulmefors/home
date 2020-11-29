@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden 🇸🇪.
+Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden 🇸🇪
 
-### Interests - for fun and profit
+### Interests for fun and profit
 
 * Renewable energy
 * Li-ion batteries
@@ -16,5 +16,5 @@ Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden 🇸🇪.
 * Investing (buy and hold good companies - don't compete with robots!)
 * Reading
 * Languages
-* Espresso (mostly fun - definitely negative profit!)
+* Espresso (almost always fun - definitely negative profit!)
 
