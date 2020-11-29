@@ -5,7 +5,7 @@ categories: [foo-cafe, self-driving-cars, machine-learning, youtube]
 title: Foo Café talk on Behavioral Cloning
 ---
 
-On 20 April 2017 I was invited to [Foo Café Malmö](https://foocafe.org/) to give a talk on Machine Learning for Self-Driving Cars. This talk focuses on Behavioral Cloning and the recording is now available to watch on [YouTube](https://www.youtube.com/watch?v=NmdVVFj3SaA). There is a follow-up video from the [9 May 2017 Neural Network Performance talk]({link 2017-05-09-ml-self-driving-cars-high-performance-nn.md}).
+On 20 April 2017 I was invited to [Foo Café Malmö](https://foocafe.org/) to give a talk on Machine Learning for Self-Driving Cars. This talk focuses on Behavioral Cloning and the recording is now available to watch on [YouTube](https://www.youtube.com/watch?v=NmdVVFj3SaA). There is a follow-up video from the [9 May 2017 Neural Network Performance talk]({% link _posts/2017-05-09-ml-self-driving-cars-high-performance-nn.md %}).
 
 [![Machine Learning for Self-Driving Cars: Behavioral Cloning](https://img.youtube.com/vi/NmdVVFj3SaA/0.jpg)](https://www.youtube.com/watch?v=NmdVVFj3SaA "Machine Learning for Self-Driving Cars: Behavioral Cloning ")
 
