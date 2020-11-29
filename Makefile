@@ -22,7 +22,7 @@ build: .FORCE
 quick-build: .FORCE
 	docker-compose stop || true;
 	docker build -t fastai/fastpages-jekyll -f _action_files/fastpages-jekyll.Dockerfile .
-	docker-compose build 
+	docker-compose build
 
 # convert word & nb without Jekyll services
 convert: .FORCE
