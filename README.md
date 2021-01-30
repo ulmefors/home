@@ -1,6 +1,4 @@
-[//]: # (BADGES SECTION)
 ![](https://github.com/ulmefors/home/workflows/CI/badge.svg) ![](https://github.com/ulmefors/home/workflows/GH-Pages%20Status/badge.svg) 
-[//]: # (END OF BADGES SECTION)
 
 # home
 
