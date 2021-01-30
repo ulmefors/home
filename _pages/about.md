@@ -8,7 +8,7 @@ Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 
 ### Interests for fun and profit
 
-* Renewable energy :sunny::dash:
+* Renewable energy :wind_face::sunny:
 * Li-ion batteries :battery:
 * Data science :bar_chart::microscope:
 * Machine learning :robot:
