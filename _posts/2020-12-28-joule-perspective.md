@@ -5,7 +5,7 @@ categories: [lithium-ion, battery-science, northvolt, imperial-college-london, m
 title: Perspective published in Joule
 ---
 
-I am thankful to have been part of a team writing a forward-looking Perspective on the future of data-driven battery research with focus on improved safety. The collaboration with co-authors from NREL, MIT, Tsinghua, and Imperial College is published in the academic journal Joule. The full text can be accessed at [The Application of Data-Driven Methods and Physics-Based Learning for Improving Battery Safety](https://authors.elsevier.com/c/1cJkV925JEDTNQ).
+I am delighted to have been part of a team writing a forward-looking Perspective on the future of data-driven battery research with focus on improved safety. The Perspective was a collaboration with co-authors from NREL, MIT, Tsinghua, and Imperial College and is now available in the academic journal Joule. The full text can be accessed at [The Application of Data-Driven Methods and Physics-Based Learning for Improving Battery Safety](https://authors.elsevier.com/c/1cJkV925JEDTNQ).
 
 One of the most intriguing sections (Practical Implementation for Commercial Applications) takes inspiration from the field of robotics and automation research where a neural network is used to combine data from simulation and real-world experiments to achieve high accuracy with comparatively small datasets. Further resources for a deeper dive into this approach[^1] is available through the KTH twitter account.
 
