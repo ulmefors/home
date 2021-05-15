@@ -14,10 +14,10 @@ Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 * Machine learning :robot:
 * Technology :computer:
 * Education 🎓
-* Investing :chart_with_upwards_trend: (buy and hold - don't compete with robots!)
+* Investing :chart_with_upwards_trend:
 * Donating to charity :heart:
-* Espresso :coffee: (almost always fun - definitely no profit!) Using [La Pavoni Europiccola 1995](https://www.lapavoni.com/en/product/professional-rame-gold/) lever machine and [Niche Zero](https://www.nichecoffee.co.uk/) grinder
-* Building computers :desktop_computer:
+* Espresso :coffee: using [La Pavoni Europiccola 1995](https://www.lapavoni.com/en/product/professional-rame-gold/) and [Niche Zero](https://www.nichecoffee.co.uk/)
+* Building computers :wrench: :desktop_computer:
 * Reading :books:
 * Languages :sweden: :uk: :es: :fr:
 * Plants :seedling:
