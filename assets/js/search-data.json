@@ -4,7 +4,7 @@
         "post0": {
             "title": "Perspective published in Joule",
             "content": "I am delighted to have been part of a team writing a forward-looking Perspective on the future of data-driven Li-ion battery research with focus on improved safety. The Perspective was a collaboration with co-authors from NREL, MIT, Tsinghua, and Imperial College and is now available in the academic journal Joule. The full text can be accessed at The Application of Data-Driven Methods and Physics-Based Learning for Improving Battery Safety. . One of the most intriguing sections (Practical Implementation for Commercial Applications) takes inspiration from the field of robotics and automation research where a neural network is used to combine data from simulation and real-world experiments to achieve high accuracy with comparatively small datasets. Further resources for a deeper dive into this approach1 is available through the KTH twitter account. . Tweet . &quot;Variational Auto-regularized Alignment for Sim-to-Real Control&quot;, a paper by Martin Hwasser et al. presented at ICRA 2020https://t.co/uiCUKpDbsJ#ICRA2020 #Robotics . &mdash; KTH Robotics, Perception and Learning Lab (@kth_rpl) June 1, 2020 Martin Hwasser, Danica Kragic, Rika Antonova “Variational Auto-regularized Alignment for Sim-to-Real Control” ICRA2020 &#8617; . |",
-            "url": "https://ulmefors.github.io/home/lithium-ion/battery-science/northvolt/imperial-college-london/mit/nrel/tsinghua/2020/12/28/joule-perspective.html",
+            "url": "https://ulmefors.com/lithium-ion/battery-science/northvolt/imperial-college-london/mit/nrel/tsinghua/2020/12/28/joule-perspective.html",
             "relUrl": "/lithium-ion/battery-science/northvolt/imperial-college-london/mit/nrel/tsinghua/2020/12/28/joule-perspective.html",
             "date": " • Dec 28, 2020"
         }
@@ -15,7 +15,7 @@
         ,"post1": {
             "title": "Imperial College talk on Northvolt Giga-scale manufacture",
             "content": "On 10 December 2019 I was invited to Imperial College London to give a talk on Northvolt’s progress so far, and what’s in store for the future. The title was Giga-Scale European Li-ion Manufacture: Bold bets, deep analytics, sustainable by design. The session was jointly hosted by Energy Futures Lab and Dyson School of Design Engineering. The recording is now available on YouTube. . .",
-            "url": "https://ulmefors.github.io/home/imperial-college-london/northvolt/gigafactory/youtube/2019/12/20/imperial-college-northvolt-gigascale-manufacture.html",
+            "url": "https://ulmefors.com/imperial-college-london/northvolt/gigafactory/youtube/2019/12/20/imperial-college-northvolt-gigascale-manufacture.html",
             "relUrl": "/imperial-college-london/northvolt/gigafactory/youtube/2019/12/20/imperial-college-northvolt-gigascale-manufacture.html",
             "date": " • Dec 20, 2019"
         }
@@ -26,7 +26,7 @@
         ,"post2": {
             "title": "Foo Café talk on Neural Network performance",
             "content": "On 9 May 2017 I was invited to Foo Café Malmö to give a second talk on Machine Learning for Self-Driving Cars. This talk builds upon the 20 April 2017 Behavioral Cloning talk and focuses on improving neural network performance. The recording is now available to watch on YouTube. . . Description . How do we achieve high performance Neural Networks for Self-Driving Cars? We will consider frequently encountered obstacles and proven solutions. This event builds on the Behavorial Cloning presentation from 20 April 2017 and will be more technical. We will explain data manipulation, neural network tricks, and computer vision to unlock better performance without collecting more data. This presentation will be friendly but may contain mathematics and code. You have been warned! .",
-            "url": "https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/05/09/ml-self-driving-cars-neural-network-performance.html",
+            "url": "https://ulmefors.com/foo-cafe/self-driving-cars/machine-learning/youtube/2017/05/09/ml-self-driving-cars-neural-network-performance.html",
             "relUrl": "/foo-cafe/self-driving-cars/machine-learning/youtube/2017/05/09/ml-self-driving-cars-neural-network-performance.html",
             "date": " • May 9, 2017"
         }
@@ -37,7 +37,7 @@
         ,"post3": {
             "title": "Foo Café talk on Behavioral Cloning",
             "content": "On 20 April 2017 I was invited to Foo Café Malmö to give a talk on Machine Learning for Self-Driving Cars. This talk focuses on Behavioral Cloning and the recording is now available to watch on YouTube. There is a follow-up video from the 9 May 2017 Neural Network performance talk. . . Description . What are Convolutional Neural Networks and why are they popular in Deep Learning image recognition applications? We will compare modern Neural Networks to “classic” Machine Learning methods and thereby understand Behavioral Cloning. We will use Behavorial Cloning to teach a car to drive itself by copying human driver behavior. Don’t worry, we’ll drive in a simulator. Safety first! .",
-            "url": "https://ulmefors.github.io/home/foo-cafe/self-driving-cars/machine-learning/youtube/2017/04/20/ml-self-driving-cars-behavioral-cloning.html",
+            "url": "https://ulmefors.com/foo-cafe/self-driving-cars/machine-learning/youtube/2017/04/20/ml-self-driving-cars-behavioral-cloning.html",
             "relUrl": "/foo-cafe/self-driving-cars/machine-learning/youtube/2017/04/20/ml-self-driving-cars-behavioral-cloning.html",
             "date": " • Apr 20, 2017"
         }
@@ -52,7 +52,7 @@
       ,"page1": {
           "title": "About",
           "content": "Hello. I’m Marcus. Since 2019 living in Stockholm, Sweden :sweden: . Interests for fun and profit . Renewable energy :wind_face::sunny: | Li-ion batteries :battery: | Data science :bar_chart::microscope: | Machine learning :robot: | Technology :computer: | Education 🎓 | Investing :chart_with_upwards_trend: | Donating to charity :heart: | Espresso :coffee: using La Pavoni Europiccola 1995 and Niche Zero | Building computers :wrench: :desktop_computer: | Reading :books: | Languages :sweden: :uk: :es: :fr: | Plants :seedling: | .",
-          "url": "https://ulmefors.github.io/home/about/",
+          "url": "https://ulmefors.com/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -84,7 +84,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://ulmefors.github.io/home/robots.txt",
+          "url": "https://ulmefors.com/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
