@@ -20,5 +20,4 @@ Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 * Building computers :wrench: :desktop_computer:
 * Reading :books:
 * Languages :sweden: :uk: :es: :fr:
-* Plants :seedling:
 
