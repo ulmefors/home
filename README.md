@@ -1,8 +1,8 @@
-![](https://github.com/ulmefors/home/workflows/CI/badge.svg) ![](https://github.com/ulmefors/home/workflows/GH-Pages%20Status/badge.svg) 
+![](https://github.com/ulmefors/home/workflows/CI/badge.svg) ![](https://github.com/ulmefors/home/workflows/GH-Pages%20Status/badge.svg)
 
 # home
 
-https://ulmefors.github.io/home/
+https://ulmefors.com
 
 ## Run locally
 
