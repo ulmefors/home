@@ -9,4 +9,6 @@ For the 31 March 2022 I was invited by Dalarna Science Park to talk about how No
 
 In the dialogue with the Dalarna Science Park CEO, Angelica Ekholm, we discussed key factors for a successful innovation ecosystem in the region such as renewable energy, sustainable logistics, and openness to diverse talent.
 
-The full video production is available on YouTube ([here](https://www.youtube.com/watch?v=CrRu_JChiZY)) where my part starts at eight minutes ([direct link](https://www.youtube.com/watch?v=CrRu_JChiZY&t=490s)).
+The full video production (in Swedish) is available on ([YouTube](https://www.youtube.com/watch?v=CrRu_JChiZY)) where my part starts at eight minutes ([direct link](https://www.youtube.com/watch?v=CrRu_JChiZY&t=490s)).
+
+[![Dalarna Talks - Northvolt and innovation in the Dalarna region](/images/2022-03-31-dalarna-science-park-talk.jpg)](https://www.youtube.com/watch?v=CrRu_JChiZY&t=490s "Dalarna Talks - Northvolt and innovation in the Dalarna region")
