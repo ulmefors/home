@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hello. I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
+![](/images/marcus.jpeg)
+
+Hello :wave: I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 
 ### Interests for fun and profit
 
