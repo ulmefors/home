@@ -10,6 +10,10 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
+  {%- if jekyll.environment == 'production' -%}
+    <script defer data-domain="ulmefors.com" src="https://plausible.io/js/plausible.js"></script>
+  {%- endif -%}
+
   {%- include custom-head.html -%}
-  
+
 </head>
