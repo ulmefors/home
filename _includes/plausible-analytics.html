@@ -1,0 +1,5 @@
+<!-- the domain name gets auto inserted from the config file -->
+
+{% if site.plausible_analytics %}
+  <script defer data-domain="{{site.plausible_analytics}}" src="https://plausible.io/js/plausible.js"></script>
+{% endif %}

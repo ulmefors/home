@@ -63,6 +63,9 @@ show_tags: true
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
 
+# Add your domain if you have Plausible Analytics and want to use it
+plausible_analytics: ulmefors.com
+
 exclude:
   - docker-compose.yml
   - action.yml
