@@ -40,9 +40,9 @@ baseurl: "" # "/home" # the subpath of your site, e.g. "/blog".
 # ISO date format instead of US convention
 minima:
   social_links:
-    linkedin: ulmefors
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/ulmefors/" }
+    - { platform: github,  user_url: "https://github.com/ulmefors" }
     # twitter: marcusulmefors
-    github: ulmefors
   date_format: "%Y-%m-%d"  # Reference https://github.com/jekyll/minima/blob/master/README.md#change-default-date-format
 
 # Set this to true to get LaTeX math equation support
