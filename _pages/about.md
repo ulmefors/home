@@ -18,7 +18,7 @@ Hello :wave: I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 * Education 🎓
 * Investing :chart_with_upwards_trend:
 * Giving what we can :heart:
-* Espresso :coffee: using [La Pavoni Europiccola 1995](https://www.lapavoni.com/en/product/professional-rame-gold/) and [Niche Zero](https://www.nichecoffee.co.uk/)
+* Espresso :coffee: using [La Pavoni Esperto Edotto](https://www.lapavoni.com/en/product/esperto-edotto/) and [Niche Zero](https://www.nichecoffee.co.uk/products/niche-zero)
 * Building computers :wrench: :desktop_computer:
 * Reading :books:
 * Languages :sweden: :uk: :es: :fr:
