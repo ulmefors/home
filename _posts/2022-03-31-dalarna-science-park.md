@@ -3,6 +3,7 @@ layout: post
 description: Innovation in the Dalarna region with energy, entrepreneurship, and diversity
 categories: [dalarna, dalarna-science-park, northvolt, youtube]
 title: Dalarna Science Park talk on Northvolt regional innovation impact
+image: /images/2022-03-31-dalarna-science-park-talk.jpg
 ---
 
 For the 31 March 2022 I was invited by Dalarna Science Park to talk about how Northvolt can have an impact on innovation in the region. I shared information about the plans for the announced factory in Kvarnsveden outside Borlänge, Dalarna, as well as other factories in Sweden and Germany.
