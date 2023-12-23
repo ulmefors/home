@@ -1,7 +1,7 @@
 ---
 layout: post
 description: Decision to donate inpired by Giving What We Can
-categories: [giving-what-we-can, charity, philantropy]
+categories: [giving-what-we-can, charity]
 title: 10% of income to most effective charities
 image: https://cdn.sanity.io/images/4rsg7ofo/production/b3b183daf4af60e425524cadd481fbee7b6594a3-1800x756.jpg
 ---
