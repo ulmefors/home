@@ -3,7 +3,7 @@ layout: post
 description: >-
     Video recording available on YouTube: "Northvolt’s software-defined factories"
 categories: [aws, reinvent, northvolt, youtube, gigafactory, cloud]
-title: AWS re:Invent presentation on scaling cloud infrastructure for Northvolt gigafactories
+title: AWS re:Invent 2023 presentation on Connected Factory Platform for Northvolt gigafactories
 image: https://img.youtube.com/vi/ojHIYr9EAxk/0.jpg
 ---
 

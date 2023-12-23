@@ -3,7 +3,7 @@ layout: post
 description: >-
     Video recording available on YouTube: "How innovators are driving more sustainable manufacturing"
 categories: [aws, reinvent, northvolt, youtube, gigafactory, cloud]
-title: AWS re:Invent presentation on scaling cloud infrastructure for Northvolt gigafactories
+title: AWS re:Invent 2022 presentation on scaling cloud infrastructure for Northvolt gigafactories
 image: https://img.youtube.com/vi/IRyC6QyBY58/0.jpg
 ---
 
