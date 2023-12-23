@@ -13,7 +13,7 @@ The session covers key components of the Northvolt Connected Factory architectur
 
 The full video production is available on [YouTube](https://www.youtube.com/watch?v=ojHIYr9EAxk) where my part starts at 11:52 ([direct link](https://www.youtube.com/watch?v=ojHIYr9EAxk&t=712s)).
 
-{% include youtube.html content='https://www.youtube.com/embed/ojHIYr9EAxk&t?start=712' %}
+{% include youtube.html content='https://www.youtube.com/embed/ojHIYr9EAxk?start=712' %}
 
 **Description**
 
