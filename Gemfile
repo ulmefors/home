@@ -38,5 +38,4 @@ gem "jemoji"
 #   gem "tzinfo-data"
 # end
 
-gem "faraday", "< 1.0"
-
+gem "faraday", "< 2"
