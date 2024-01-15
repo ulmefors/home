@@ -106,7 +106,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.21.1)
     mutex_m (0.2.0)
-    nokogiri (1.15.5)
+    nokogiri (1.16.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octicons (19.8.0)
@@ -155,7 +155,7 @@ DEPENDENCIES
   jemoji
   kramdown-math-katex
   minima
-  nokogiri (< 1.16)
+  nokogiri (< 1.17)
 
 BUNDLED WITH
    2.1.4
