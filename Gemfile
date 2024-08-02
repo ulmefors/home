@@ -29,7 +29,7 @@ end
 gem "kramdown-math-katex"
 gem "jemoji"
 gem "public_suffix", "< 6.0" # 6.0 requires ruby >= 3.0
-gem "ffi", "< 1.17" # 1.17 incompatible with github actions
+gem "ffi", "< 1.18" # 1.17 incompatible with github actions
 gem "nokogiri", "< 1.16" # 1.16 requires ruby >= 3.0
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
