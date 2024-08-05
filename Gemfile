@@ -41,4 +41,4 @@ gem "nokogiri", "< 1.16" # 1.16 requires ruby >= 3.0
 #   gem "tzinfo-data"
 # end
 
-gem "faraday", "< 2.9" # 2.9 requires ruby >= 3.0
+gem "faraday", "< 2.11" # 2.9 requires ruby >= 3.0
