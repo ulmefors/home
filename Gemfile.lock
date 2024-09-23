@@ -24,11 +24,12 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     execjs (2.9.1)
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
+    faraday (2.12.0)
+      faraday-net_http (>= 2.0, < 3.4)
+      json
+      logger
+    faraday-net_http (3.3.0)
+      net-http
     ffi (1.16.3)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
@@ -84,6 +85,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    json (2.7.2)
     katex (0.10.0)
       execjs (~> 2.8)
     kramdown (2.4.0)
@@ -97,6 +99,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.6.1)
     mercenary (0.4.0)
     mini_portile2 (2.8.7)
     minima (2.5.1)
@@ -105,6 +108,8 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.24.1)
     mutex_m (0.2.0)
+    net-http (0.4.1)
+      uri
     nokogiri (1.15.6)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -122,7 +127,6 @@ GEM
     rexml (3.3.4)
       strscan
     rouge (3.30.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
     sassc (2.4.0)
@@ -136,12 +140,13 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
+    uri (0.13.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  faraday (< 2.9)
+  faraday (< 2.13)
   ffi (< 1.17)
   jekyll (~> 4.1.0)
   jekyll-feed (~> 0.12)
