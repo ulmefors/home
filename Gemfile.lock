@@ -101,7 +101,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.6.1)
+    logger (1.6.2)
     mercenary (0.4.0)
     mini_portile2 (2.8.8)
     minima (2.5.2)
@@ -145,9 +145,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (< 7.2)
+  activesupport (~> 7.1.5)
   faraday (< 2.9)
-  ffi (< 1.17)
+  ffi (~> 1.16.3)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.12)
   jekyll-gist
@@ -162,8 +162,8 @@ DEPENDENCIES
   jemoji
   kramdown-math-katex
   minima
-  nokogiri (< 1.16)
-  public_suffix (< 6.0)
+  nokogiri (~> 1.15.6)
+  public_suffix (~> 5.1)
 
 BUNDLED WITH
    2.1.4
