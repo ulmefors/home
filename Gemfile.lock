@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.1.5)
+    activesupport (7.1.5.1)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -101,14 +101,14 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.6.2)
+    logger (1.6.4)
     mercenary (0.4.0)
     mini_portile2 (2.8.8)
     minima (2.5.2)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.25.2)
+    minitest (5.25.4)
     mutex_m (0.3.0)
     nokogiri (1.15.7)
       mini_portile2 (~> 2.8.2)
@@ -164,6 +164,7 @@ DEPENDENCIES
   minima
   nokogiri (~> 1.15.6)
   public_suffix (~> 5.1)
+  securerandom (~> 0.3.2)
 
 BUNDLED WITH
    2.1.4
