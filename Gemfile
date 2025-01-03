@@ -30,7 +30,7 @@ gem "kramdown-math-katex"
 gem "jemoji"
 gem "public_suffix", "~> 5.1" # 6.0 requires ruby >= 3.0
 gem "ffi", "~> 1.16.3" # 1.17 incompatible with github actions
-gem "nokogiri", "~> 1.15.6" # 1.16 requires ruby >= 3.0
+gem "nokogiri", "~> 1.18.1" # 1.16 requires ruby >= 3.0
 gem "activesupport", "~> 7.1.5" # 7.2 requires ruby >= 3.1
 gem "securerandom", "~> 0.3.2" # 0.4.0 requires ruby >= 3.1.0
 
