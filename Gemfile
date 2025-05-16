@@ -43,4 +43,4 @@ gem "securerandom", "~> 0.3.2" # 0.4.0 requires ruby >= 3.1.0
 #   gem "tzinfo-data"
 # end
 
-gem "faraday", "< 2.9" # 2.9 requires ruby >= 3.0
+gem "faraday", "~> 2.8.1" # 2.9 requires ruby >= 3.0
