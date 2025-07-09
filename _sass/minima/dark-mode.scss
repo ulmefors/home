@@ -3,6 +3,7 @@ $med-emph: rgba(white, 0.69); //Noicee
 $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; 
 // $dark-grey : #1F1B24;
+$mild-blue: rgb(75, 186, 255);
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
@@ -12,11 +13,19 @@ html, body, input, textarea, select, button {
 }
 
 a {
-    color: rgb(75, 186, 255) !important;
+    color: $mild-blue !important;
 }
 
 a:hover {
-    color:$high-emph !important;
+    color: $high-emph !important;
+}
+
+.search-results-list-item .search-result-title {
+    color: $med-emph;
+}
+
+.search-result-highlight {
+    color: $mild-blue;
 }
 
 .site-title, .site-title:visited, .post-title, .site-nav, .page-link{
