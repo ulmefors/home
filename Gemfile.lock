@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/jekyll/minima.git
+  revision: 0b7ca6bbdb782a646f8e7b78b1a29fd5032ad4d3
+  ref: 0b7ca6b
+  specs:
+    minima (3.0.0.dev)
+      jekyll (>= 3.5, < 5.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -104,10 +114,6 @@ GEM
     logger (1.7.0)
     mercenary (0.4.0)
     mini_portile2 (2.8.9)
-    minima (2.5.2)
-      jekyll (>= 3.5, < 5.0)
-      jekyll-feed (~> 0.9)
-      jekyll-seo-tag (~> 2.1)
     minitest (5.25.5)
     mutex_m (0.3.0)
     nokogiri (1.15.7)
@@ -161,7 +167,7 @@ DEPENDENCIES
   jekyll-twitter-plugin
   jemoji
   kramdown-math-katex
-  minima
+  minima!
   nokogiri (~> 1.15.6)
   public_suffix (~> 5.1)
   securerandom (~> 0.3.2)
