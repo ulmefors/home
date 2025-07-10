@@ -30,11 +30,16 @@ baseurl: "" # "/home" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 # ISO date format instead of US convention
 minima:
-  social_links:
-    - { platform: linkedin, user_url: "https://www.linkedin.com/in/ulmefors/" }
-    - { platform: github,  user_url: "https://github.com/ulmefors" }
-    # twitter: marcusulmefors
   date_format: "%Y-%m-%d"  # Reference https://github.com/jekyll/minima/blob/master/README.md#change-default-date-format
+
+  social_links:
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/ulmefors/"
+    - title: GitHub
+      icon: github
+      url: "https://github.com/ulmefors"
+  hide_site_feed_link: true
 
 # Set this to true to get LaTeX math equation support
 use_math:
