@@ -11,7 +11,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.1.5.1)
+    activesupport (7.1.5.2)
       base64
       benchmark (>= 0.3)
       bigdecimal
