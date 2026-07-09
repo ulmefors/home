@@ -50,7 +50,7 @@ GEM
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.8.0)
-    i18n (1.15.2)
+    i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     jekyll (4.1.1)
       addressable (~> 2.4)
@@ -151,10 +151,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (~> 7.1.5)
+  activesupport (~> 7.1.6)
   connection_pool (< 3.0)
   faraday (~> 2.8.1)
   ffi (~> 1.16.3)
+  i18n (~> 1.14.8)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.12)
   jekyll-gist
