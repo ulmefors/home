@@ -114,7 +114,7 @@ GEM
     logger (1.7.0)
     mercenary (0.4.0)
     mini_portile2 (2.8.9)
-    minitest (5.27.0)
+    minitest (5.25.5)
     mutex_m (0.3.0)
     nokogiri (1.15.7)
       mini_portile2 (~> 2.8.2)
@@ -170,6 +170,7 @@ DEPENDENCIES
   jemoji
   kramdown-math-katex
   minima!
+  minitest (~> 5.25.5)
   nokogiri (~> 1.15.6)
   public_suffix (~> 5.1)
   securerandom (~> 0.3.2)
