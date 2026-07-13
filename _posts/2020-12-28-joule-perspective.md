@@ -13,8 +13,12 @@ I am delighted to have been part of a team writing a forward-looking Perspective
 One of the most intriguing sections, **Practical Implementation for Commercial Applications**, takes inspiration from the field of robotics and automation research where a neural network is used to combine data from simulation and real-world experiments to achieve high accuracy with comparatively small datasets. Further resources for a deeper dive into this approach[^1] is available through the KTH twitter account.
 
 **Tweet**
-{% twitter https://twitter.com/kth_rpl/status/1267387213232422913 %}
-
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">Variational Auto-regularized Alignment for Sim-to-Real Control</p>
+  &mdash; KTH RPL (@kth_rpl)
+  <a href="https://twitter.com/kth_rpl/status/1267387213232422913">June 1, 2020</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [^1]: Martin Hwasser, Danica Kragic, Rika Antonova *"Variational Auto-regularized Alignment for Sim-to-Real Control"* ICRA2020
 
