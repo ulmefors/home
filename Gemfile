@@ -36,7 +36,7 @@ gem "activesupport", "~> 7.1.6" # 7.2 requires ruby >= 3.1
 gem "connection_pool", "< 3.0"
 gem "securerandom", "~> 0.3.2" # 0.4.0 requires ruby >= 3.1.0
 gem "i18n", "~> 1.14.8" # 1.15 requires ruby >= 3.1
-gem "minitest", "~> 5.25.5"
+gem "minitest", "~> 6.0.6"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
