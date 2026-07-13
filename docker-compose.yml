@@ -40,5 +40,6 @@ services:
       - "4000:4000"
     volumes:
       - .:/data/
+    # jekyll-remote-theme 0.5.1 dependency on openssl with native extensions
     command: >
-      bash -c "chmod -R u+rw . && jekyll serve --host 0.0.0.0 --trace --strict_front_matter"
+      bash -c "chmod -R u+rw . && apk add --no-cache openssl-dev build-base && jekyll serve --host 0.0.0.0 --trace --strict_front_matter"
