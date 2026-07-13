@@ -35,7 +35,7 @@ gem "nokogiri", "~> 1.15.6" # 1.16 requires ruby >= 3.0
 gem "activesupport", "~> 7.1.6" # 7.2 requires ruby >= 3.1
 gem "connection_pool", "< 3.0"
 gem "securerandom", "~> 0.3.2" # 0.4.0 requires ruby >= 3.1.0
-gem "i18n", "~> 1.14.8" # 1.15 requires ruby >= 3.1
+gem "i18n", "~> 1.15.2" # 1.15 requires ruby >= 3.1
 gem "minitest", "~> 5.25.5"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
