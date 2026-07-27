@@ -7,7 +7,8 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.1.1"
+gem "jekyll", "~> 4.4.1"
+gem "webrick", "~> 1.8"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", github: "jekyll/minima", ref: "0b7ca6b"
 
@@ -28,22 +29,4 @@ end
 
 gem "kramdown-math-katex"
 gem "jemoji"
-gem "public_suffix", "~> 5.1" # 6.0 requires ruby >= 3.0
-gem "ffi", "~> 1.16.3" # 1.17 incompatible with github actions
-gem "nokogiri", "~> 1.15.6" # 1.16 requires ruby >= 3.0
-gem "activesupport", "~> 7.1.6" # 7.2 requires ruby >= 3.1
-gem "connection_pool", "< 3.0"
-gem "securerandom", "~> 0.3.2" # 0.4.0 requires ruby >= 3.1.0
-gem "i18n", "~> 1.14.8" # 1.15 requires ruby >= 3.1
-gem "minitest", "~> 5.25.5"
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
-# Performance-booster for watching directories on Windows
-# gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
-# install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
-#   gem "tzinfo", "~> 1.2"
-#   gem "tzinfo-data"
-# end
-
-gem "faraday", "~> 2.8.1" # 2.9 requires ruby >= 3.0

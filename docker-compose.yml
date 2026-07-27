@@ -1,4 +1,3 @@
-version: "3"
 services:
   fastpages: &fastpages
     working_dir: /data
@@ -34,12 +33,14 @@ services:
 
   jekyll:
     working_dir: /data
-    image: fastai/fastpages-jekyll
+    build:
+      context: .
+      dockerfile: ./_action_files/fastpages-jekyll.Dockerfile
+    image: fastpages-jekyll
     restart: unless-stopped
     ports:
       - "4000:4000"
     volumes:
       - .:/data/
-    # jekyll-remote-theme 0.5.1 dependency on openssl with native extensions
-    command: >
-      bash -c "chmod -R u+rw . && apk add --no-cache openssl-dev build-base && jekyll serve --host 0.0.0.0 --trace --strict_front_matter"
+    command: >  
+      bash -c "chmod -R u+rw . && bundle install && bundle exec jekyll serve --host 0.0.0.0 --trace --strict_front_matter"
