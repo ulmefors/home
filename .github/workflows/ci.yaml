@@ -38,10 +38,14 @@ jobs:
         rm -rf _site
         sudo chmod -R 777 .
 
-    - name: Jekyll build
-      uses: docker://fastai/fastpages-jekyll
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        args: bash -c "apk add --no-cache openssl-dev build-base && jekyll build -V --strict_front_matter --trace"
+        ruby-version: '3.3'
+        bundler-cache: true
+
+    - name: Jekyll build
+      run: bundle exec jekyll build -V --strict_front_matter --trace
       env:
         JEKYLL_ENV: 'production'
         

@@ -19,7 +19,7 @@ Everything runs in Docker via `docker-compose`. See `Makefile` for the full list
 - `make bash-jekyll` / `make bash-nb` — shell into the running Jekyll or notebook-watcher container.
 - `make restart-jekyll` — restart just the Jekyll service (containers must be up).
 
-There is no test suite. CI just runs `jekyll build --strict_front_matter --trace` inside the `fastai/fastpages-jekyll` image and deploys `_site/` to GitHub Pages.
+There is no test suite. CI runs `ruby/setup-ruby` with Ruby 3.3 and `bundle exec jekyll build --strict_front_matter --trace` and deploys `_site/` to GitHub Pages.
 
 ## Architecture
 
@@ -33,7 +33,3 @@ Content flows through two stages: **conversion** (notebooks/word → markdown) a
 - `_action_files/` — the fastpages "action" — Dockerfile plus Python/shell scripts (`nb2post.py`, `word2post.py`, etc.) that do the notebook/word conversion. Also referenced as a local action from `ci.yaml` (`uses: ./_action_files`).
 - `_site/` — Jekyll build output. Not committed except when locally built; ignore in edits.
 - `settings.ini` and `_config.yml` — fastpages/Jekyll settings. `_config.yml` is the one that matters for site behavior (title, plugins, analytics, pagination).
-
-## Gemfile pinning
-
-Several gems are pinned to older majors to keep Ruby-version compat with the `fastai/fastpages-jekyll` Docker image and GitHub Actions. Don't casually bump `activesupport`, `nokogiri`, `public_suffix`, `ffi`, `securerandom`, or `faraday` past the pinned upper bounds — the inline comments explain each ceiling (mostly "next major requires ruby >= 3.0/3.1").
