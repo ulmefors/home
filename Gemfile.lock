@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/jekyll/minima.git
-  revision: 0b7ca6bbdb782a646f8e7b78b1a29fd5032ad4d3
-  ref: 0b7ca6b
+  revision: 4de322363fca5927e6f4012cb94f6dad69ab5e6c
+  ref: 4de3223
   specs:
     minima (3.0.0.dev)
       jekyll (>= 3.5, < 5.0)
@@ -185,4 +185,4 @@ DEPENDENCIES
   webrick (~> 1.8)
 
 BUNDLED WITH
-   2.5.22
+  4.0.17
