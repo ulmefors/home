@@ -10,7 +10,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.4.1"
 gem "webrick", "~> 1.8"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", github: "jekyll/minima", ref: "0b7ca6b"
+gem "minima", github: "jekyll/minima", ref: "4de3223"
 
 # To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
