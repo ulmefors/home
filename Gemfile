@@ -9,24 +9,16 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.4.1"
 gem "webrick", "~> 1.8"
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", github: "jekyll/minima", ref: "4de3223"
 
-# To upgrade, run `bundle update github-pages`.
-# gem "github-pages", group: :jekyll_plugins
-# If you have any plugins, put them here!
+gem "kramdown-math-katex"
+
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-octicons'
-  gem 'jekyll-remote-theme'
   gem 'jekyll-relative-links'
   gem 'jekyll-seo-tag'
   gem 'jekyll-toc'
-  gem 'jekyll-gist'
-  gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
+  gem "jemoji"
 end
-
-gem "kramdown-math-katex"
-gem "jemoji"
-

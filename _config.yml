@@ -84,25 +84,6 @@ html_escape:
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-octicons
-  - jekyll-toc
-  - jekyll-relative-links
-  - jekyll-seo-tag
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jemoji
-
-# See https://jekyllrb.com/docs/pagination/
-# For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
-paginate: 15
-paginate_path: /page:num/
-
-# Define minima version in Gemfile
-# remote_theme: jekyll/minima
 
 titles_from_headings:
   enabled:     true
