@@ -18,7 +18,7 @@ jobs:
       - name: Compare pinned minima commit with upstream HEAD
         id: check
         run: |
-          current_ref=$(grep -oP '(?<=gem "minima", github: "jekyll/minima", ref: ")[^"]+' Gemfile)
+          current_ref=$(grep -oP '(?<=gem "minima", github: "jekyll/minima", ref: ")[^"]+' Gemfile || true)
           if [ -z "$current_ref" ]; then
             echo "::error::Could not parse pinned minima ref from Gemfile" >&2
             exit 1
@@ -26,6 +26,10 @@ jobs:
 
           latest_sha=$(git ls-remote https://github.com/jekyll/minima.git HEAD | cut -f1)
           latest_short=${latest_sha:0:7}
+          if [ -z "$latest_sha" ]; then
+            echo "::error::Could not determine latest minima commit via git ls-remote" >&2
+            exit 1
+          fi
 
           echo "Current pinned ref: $current_ref"
           echo "Latest minima commit: $latest_sha ($latest_short)"
