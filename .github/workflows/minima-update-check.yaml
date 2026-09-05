@@ -76,17 +76,17 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           title="Update minima theme pin to ${{ steps.check.outputs.latest_short }}"
-          body="A newer commit is available on [jekyll/minima](https://github.com/jekyll/minima)'s default branch.
+          body=$(printf '%s\n\n%s\n%s\n\n%s\n\n%s' \
+            "A newer commit is available on [jekyll/minima](https://github.com/jekyll/minima)'s default branch." \
+            "- Current pinned commit: [\`${{ steps.check.outputs.current_ref }}\`](https://github.com/jekyll/minima/commit/${{ steps.check.outputs.current_ref }})" \
+            "- Latest commit: [\`${{ steps.check.outputs.latest_short }}\`](https://github.com/jekyll/minima/commit/${{ steps.check.outputs.latest_sha }})" \
+            "Gemfile and Gemfile.lock were updated automatically; CI will build the site against the new commit before this is merged." \
+            "Opened automatically by the monthly minima version check.")
 
-          - Current pinned commit: [\`${{ steps.check.outputs.current_ref }}\`](https://github.com/jekyll/minima/commit/${{ steps.check.outputs.current_ref }})
-          - Latest commit: [\`${{ steps.check.outputs.latest_short }}\`](https://github.com/jekyll/minima/commit/${{ steps.check.outputs.latest_sha }})
+          existing_pr=$(gh pr list --head "${{ steps.branch.outputs.branch }}" --state open --json number --jq '.[0].number // empty')
 
-          Gemfile and Gemfile.lock were updated automatically; CI will build the site against the new commit before this is merged.
-
-          Opened automatically by the monthly minima version check."
-
-          if gh pr view "${{ steps.branch.outputs.branch }}" --json number >/dev/null 2>&1; then
-            gh pr edit "${{ steps.branch.outputs.branch }}" --title "$title" --body "$body"
+          if [ -n "$existing_pr" ]; then
+            gh pr edit "$existing_pr" --title "$title" --body "$body"
           else
             gh pr create --title "$title" --body "$body" --head "${{ steps.branch.outputs.branch }}" --base master
           fi
