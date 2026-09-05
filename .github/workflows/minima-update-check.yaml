@@ -1,0 +1,96 @@
+name: Check minima theme version
+on:
+  schedule:
+    - cron: '0 6 1 * *' # 06:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-minima:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy Repository Contents
+        uses: actions/checkout@v5
+
+      - name: Compare pinned minima commit with upstream HEAD
+        id: check
+        run: |
+          current_ref=$(grep -oP '(?<=gem "minima", github: "jekyll/minima", ref: ")[^"]+' Gemfile || true)
+          if [ -z "$current_ref" ]; then
+            echo "::error::Could not parse pinned minima ref from Gemfile" >&2
+            exit 1
+          fi
+
+          latest_sha=$(git ls-remote https://github.com/jekyll/minima.git HEAD | cut -f1)
+          latest_short=${latest_sha:0:7}
+          if [ -z "$latest_sha" ]; then
+            echo "::error::Could not determine latest minima commit via git ls-remote" >&2
+            exit 1
+          fi
+
+          echo "Current pinned ref: $current_ref"
+          echo "Latest minima commit: $latest_sha ($latest_short)"
+
+          if [ "$current_ref" = "$latest_short" ] || [ "$current_ref" = "$latest_sha" ]; then
+            update_available=false
+          else
+            update_available=true
+          fi
+
+          {
+            echo "update_available=$update_available"
+            echo "current_ref=$current_ref"
+            echo "latest_sha=$latest_sha"
+            echo "latest_short=$latest_short"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Set up Ruby
+        if: steps.check.outputs.update_available == 'true'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Update Gemfile and Gemfile.lock
+        if: steps.check.outputs.update_available == 'true'
+        run: |
+          sed -i "s/ref: \"${{ steps.check.outputs.current_ref }}\"/ref: \"${{ steps.check.outputs.latest_short }}\"/" Gemfile
+          bundle lock --update minima
+
+      - name: Commit and push update branch
+        if: steps.check.outputs.update_available == 'true'
+        id: branch
+        run: |
+          branch="chore/update-minima-theme"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$branch":"refs/remotes/origin/$branch" 2>/dev/null || true
+          git checkout -B "$branch"
+          git add Gemfile Gemfile.lock
+          git commit -m "Update minima theme pin to ${{ steps.check.outputs.latest_short }}"
+          git push --force-with-lease origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update pull request
+        if: steps.check.outputs.update_available == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Update minima theme pin to ${{ steps.check.outputs.latest_short }}"
+          body=$(printf '%s\n\n%s\n%s\n\n%s\n\n%s' \
+            "A newer commit is available on [jekyll/minima](https://github.com/jekyll/minima)'s default branch." \
+            "- Current pinned commit: [\`${{ steps.check.outputs.current_ref }}\`](https://github.com/jekyll/minima/commit/${{ steps.check.outputs.current_ref }})" \
+            "- Latest commit: [\`${{ steps.check.outputs.latest_short }}\`](https://github.com/jekyll/minima/commit/${{ steps.check.outputs.latest_sha }})" \
+            "Gemfile and Gemfile.lock were updated automatically; CI will build the site against the new commit before this is merged." \
+            "Opened automatically by the monthly minima version check.")
+
+          existing_pr=$(gh pr list --head "${{ steps.branch.outputs.branch }}" --state open --json number --jq '.[0].number // empty')
+
+          if [ -n "$existing_pr" ]; then
+            gh pr edit "$existing_pr" --title "$title" --body "$body"
+          else
+            gh pr create --title "$title" --body "$body" --head "${{ steps.branch.outputs.branch }}" --base master
+          fi
