@@ -2,7 +2,25 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="twitter:card" content="summary_large_image" />
+
+  {%- comment -%}
+    Keep utility pages (search, 404) out of the index while still letting crawlers
+    follow the links on them. Set `noindex: true` in a page's front matter.
+  {%- endcomment -%}
+  {%- if page.noindex -%}
+  <meta name="robots" content="noindex, follow">
+  {%- endif -%}
+
+  {%- comment -%} Open the connections for render-blocking third party assets early. {%- endcomment -%}
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  {%- if jekyll.environment == 'production' and site.plausible_analytics -%}
+  <link rel="preconnect" href="https://analytics.gotit.click" crossorigin>
+  {%- endif -%}
+
+  {%- comment -%}
+    jekyll-seo-tag emits title, canonical, meta description, Open Graph, Twitter
+    cards and the JSON-LD structured data. Do not hand-roll those tags here.
+  {%- endcomment -%}
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}

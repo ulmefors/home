@@ -2,9 +2,16 @@
 layout: page
 title: About
 permalink: /about/
+description: >-
+  About Marcus Ulmefors, working with data, cloud, and machine learning for
+  Li-ion battery manufacturing, based in Stockholm, Sweden.
+image: /images/marcus.jpeg
+seo:
+  type: Person
+  name: Marcus Ulmefors
 ---
 
-![](/images/marcus.jpeg)
+![Marcus Ulmefors](/images/marcus.jpeg)
 
 Hello :wave: I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 
