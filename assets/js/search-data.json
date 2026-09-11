@@ -117,33 +117,33 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-      ,"page10": {
+      ,"page3": {
           "title": "",
-          "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
+          "content": "User-agent: * Allow: / . Client-side search page, no crawlable content of its own. . Disallow: /search/ . Sitemap: https://ulmefors.com/sitemap.xml .",
           "url": "https://ulmefors.com/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
       
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
   
 
 }
