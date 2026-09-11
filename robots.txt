@@ -1,0 +1,10 @@
+---
+sitemap: false
+---
+User-agent: *
+Allow: /
+
+# Client-side search page, no crawlable content of its own.
+Disallow: /search/
+
+Sitemap: {{ "/sitemap.xml" | absolute_url }}

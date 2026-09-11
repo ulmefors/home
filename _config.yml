@@ -1,5 +1,32 @@
 
 title: marcus ulmefors
+# Appended after the site title in the <title> tag on the home page, and used as the
+# fallback meta description everywhere a page does not define its own.
+tagline: "Talks, publications, and writing on batteries, cloud, and machine learning"
+description: >-
+  Personal site of Marcus Ulmefors with talks, publications, and writing on Li-ion
+  batteries, gigafactory cloud architecture, data science, and machine learning.
+
+# Used by jekyll-seo-tag for the author in the JSON-LD structured data of every post.
+# Site level only, so post bylines in the layout are unaffected.
+author:
+  name: Marcus Ulmefors
+  url: "https://ulmefors.com/about/"
+
+# Feeds the schema.org "sameAs" links and the entity name on the home and about pages.
+social:
+  name: Marcus Ulmefors
+  links:
+    - "https://www.linkedin.com/in/ulmefors/"
+    - "https://github.com/ulmefors"
+
+# Publisher logo in the JSON-LD structured data.
+logo: /images/logo.png
+
+# <html lang> and og:locale
+lang: en
+locale: en_US
+
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "home"
 
@@ -62,14 +89,27 @@ google_analytics:
 # Add your domain if you have Plausible Analytics and want to use it
 plausible_analytics: ulmefors.com
 
+# Files that should not be copied into the built site. Jekyll appends its own
+# defaults (Gemfile, vendor/, node_modules/, ...) to this list.
 exclude:
   - docker-compose.yml
   - action.yml
   - Makefile
+  - README.md
+  - LICENSE
+  - CLAUDE.md
 
 # this setting allows you to keep pages organized in the _pages folder
 include:
   - _pages
+
+# Fallback social preview image so every page has an og:image / twitter:image.
+# Any page or post that sets `image` in its front matter overrides this.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/logo.png
 
 # This specifies what badges are turned on by default for notebook posts.
 default_badges:
