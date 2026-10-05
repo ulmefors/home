@@ -1,6 +1,11 @@
 name: Dependabot Auto-merge
 
-on: pull_request
+# Runs after the CI workflow finishes, so a Dependabot PR is merged only once
+# its site build has passed. A failed or cancelled build leaves the PR open.
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
 
 permissions:
   contents: write
@@ -9,15 +14,25 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.actor.login == 'dependabot[bot]' &&
+      github.event.workflow_run.head_repository.full_name == github.repository &&
+      startsWith(github.event.workflow_run.head_branch, 'dependabot/')
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v2
-
-      - name: Enable auto-merge for Dependabot PRs
-        run: gh pr merge --auto --squash "$PR_URL"
+      - name: Merge Dependabot PR
+        run: |
+          pr=$(gh pr view "$HEAD_BRANCH" --repo "$REPO" --json number,author,state,baseRefName \
+            --jq 'select((.author.login | test("dependabot")) and .state == "OPEN" and .baseRefName == "master") | .number')
+          if [ -z "$pr" ]; then
+            echo "No open Dependabot PR into master for $HEAD_BRANCH; nothing to merge."
+            exit 0
+          fi
+          # Only merge the exact commit CI built; a newer push gets its own CI run.
+          gh pr merge "$pr" --repo "$REPO" --squash --match-head-commit "$HEAD_SHA"
         env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          REPO: ${{ github.repository }}
+          HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
