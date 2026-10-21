@@ -12,4 +12,4 @@ On 9 May 2017 I was invited to [Foo Café Malmö](https://foocafe.org/) to give 
 
 **Description**
 
-*How do we achieve high performance Neural Networks for Self-Driving Cars? We will consider frequently encountered obstacles and proven solutions. This event builds on the Behavorial Cloning presentation from 20 April 2017 and will be more technical. We will explain data manipulation, neural network tricks, and computer vision to unlock better performance without collecting more data. This presentation will be friendly but may contain mathematics and code. You have been warned!*
+*How do we achieve high-performance Neural Networks for Self-Driving Cars? We will consider frequently encountered obstacles and proven solutions. This event builds on the Behavioral Cloning presentation from 20 April 2017 and will be more technical. We will explain data manipulation, neural network tricks, and computer vision to unlock better performance without collecting more data. This presentation will be friendly but may contain mathematics and code. You have been warned!*

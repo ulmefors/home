@@ -24,7 +24,7 @@ search_exclude: true
   </ul>
 
   {% for category in categories %}
-      <h3 id ="{{ category }}"><i class="fas fa-tags category-tags-icon"></i></i> {{ category }}</h3>
+      <h3 id="{{ category }}"><i class="fas fa-tags category-tags-icon"></i> {{ category }}</h3>
       <a name="{{ category | slugize }}"></a>
       {% for post in site.categories[category] %}
         {% if post.hide != true %}

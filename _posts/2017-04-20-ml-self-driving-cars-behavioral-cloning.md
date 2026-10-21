@@ -12,4 +12,4 @@ On 20 April 2017 I was invited to [Foo Café Malmö](https://foocafe.org/) to gi
 
 **Description**
 
-*What are Convolutional Neural Networks and why are they popular in Deep Learning image recognition applications? We will compare modern Neural Networks to "classic" Machine Learning methods and thereby understand Behavioral Cloning. We will use Behavorial Cloning to teach a car to drive itself by copying human driver behavior. Don't worry, we'll drive in a simulator. Safety first!*
+*What are Convolutional Neural Networks and why are they popular in Deep Learning image recognition applications? We will compare modern Neural Networks to "classic" Machine Learning methods and thereby understand Behavioral Cloning. We will use Behavioral Cloning to teach a car to drive itself by copying human driver behavior. Don't worry, we'll drive in a simulator. Safety first!*

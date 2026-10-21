@@ -5,7 +5,7 @@ from typing import Tuple, Set
 
 # Check for YYYY-MM-DD
 _re_blog_date = re.compile(r'([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])-)')
-# Check for leading dashses or numbers
+# Check for leading dashes or numbers
 _re_numdash = re.compile(r'(^[-\d]+)')
 
 def rename_for_jekyll(nb_path: Path, warnings: Set[Tuple[str, str]]=None) -> str:
@@ -20,7 +20,7 @@ def rename_for_jekyll(nb_path: Path, warnings: Set[Tuple[str, str]]=None) -> str
     else:
         clean_name = _re_numdash.sub('', nb_path.with_suffix('.md').name).replace(' ', '-')
 
-        # Gets the file's last modified time and and append YYYY-MM-DD- to the beginning of the filename
+        # Gets the file's last modified time and appends YYYY-MM-DD- to the beginning of the filename
         mdate = os.path.getmtime(nb_path) - 86400 # subtract one day b/c dates in the future break Jekyll
         dtnm = datetime.fromtimestamp(mdate).strftime("%Y-%m-%d-") + clean_name
         assert _re_blog_date.match(dtnm), f'{dtnm} is not a valid name, filename must be pre-pended with YYYY-MM-DD-'

@@ -7,11 +7,11 @@ title: AWS re:Invent 2022 presentation on scaling cloud infrastructure for North
 image: https://img.youtube.com/vi/IRyC6QyBY58/0.jpg
 ---
 
-I was invited to give an in-person presentation at re:Invent 2022 on how Northvolt leverages Amazon Web Services (AWS) to scale Li-ion Battery Gigafactories. With me on stage was Muhammad Sajid (Solutions Architect at AWS) who highlighted the importance of sustainable manufacturing.
+I was invited to give an in-person presentation at re:Invent 2022 on how Northvolt leverages Amazon Web Services (AWS) to scale Li-ion Battery Gigafactories. With me on stage was Muhammad Sajid (Solutions Architect at AWS), who highlighted the importance of sustainable manufacturing.
 
 The session covers key components of the Northvolt Connected Factory architecture, including IoT Platform, Cloud MES, Traceability, Interactive Operations, and Data Platform. The concept and design principles of Cloud Factory Modules are introduced as the foundation for our scalability vision.
 
-The full video production is available on [YouTube](https://www.youtube.com/watch?v=IRyC6QyBY58) where my part starts at 32:14 ([direct link](https://www.youtube.com/watch?v=IRyC6QyBY58&t=1934s)).
+The full video production is available on [YouTube](https://www.youtube.com/watch?v=IRyC6QyBY58), where my part starts at 32:14 ([direct link](https://www.youtube.com/watch?v=IRyC6QyBY58&t=1934s)).
 
 {% include youtube.html content='https://www.youtube.com/embed/IRyC6QyBY58?start=1934' %}
 

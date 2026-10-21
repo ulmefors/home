@@ -150,7 +150,7 @@ jobs:
         
         assert settings_path.exists(), 'Did not find _action_files/settings.ini in your repository!'
         assert config_path.exists(), 'Did not find _config.yml in your repository!'
-        assert setup_pr_path.exists(), 'Did not find_fastpages_docs/_setup_pr_template.md in the current directory!'
+        assert setup_pr_path.exists(), 'Did not find _fastpages_docs/_setup_pr_template.md in the current directory!'
         assert upgrade_pr_path.exists(), 'Did not find _fastpages_docs/_upgrade_pr.md in your repository!'
         
         # read data from config files
