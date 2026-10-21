@@ -28,6 +28,7 @@ Hello :wave: I'm Marcus. Since 2019 living in Stockholm, Sweden :sweden:
 * Investing :chart_with_upwards_trend:
 * Giving what we can :heart:
 * Espresso :coffee: using [La Pavoni Esperto Edotto](https://bucket-smeg.4flow.cloud/OBJECTS/JPG%2072%20dpi/LPLESE01EU.jpg) and [Niche Zero](https://www.nichecoffee.co.uk/products/niche-zero)
+* Wine :wine_glass: 
 * Building computers :wrench: :desktop_computer:
 * Reading :books:
 * Parenting :baby:
