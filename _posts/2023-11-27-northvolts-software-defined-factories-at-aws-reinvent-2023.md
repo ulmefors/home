@@ -7,11 +7,11 @@ title: AWS re:Invent 2023 presentation on Connected Factory Platform for Northvo
 image: https://img.youtube.com/vi/ojHIYr9EAxk/0.jpg
 ---
 
-I was invited to give an in-person presentation at re:Invent 2023 on how Northvolt leverages Amazon Web Services (AWS) to scale Li-ion Battery Gigafactories. With me on stage was Karthik Krishnamurthy (Business Development Leader, Manufacturing & Sustainability at AWS), who highlighted the importance of digital manufacturing.
+I was invited to give an in-person presentation at re:Invent 2023 on how Northvolt leverages Amazon Web Services (AWS) to scale Li-ion Battery Gigafactories. With me on stage was Karthik Krishnamurthy (Business Development Leader, Manufacturing & Sustainability at AWS) who highlighted the importance of digital manufacturing.
 
 The session covers key components of the Northvolt Connected Factory architecture, including IoT Platform, Cloud MES, Traceability, Interactive Operations, and Data Platform. The concept and design principles of Cloud Factory Modules are introduced as the foundation for our scalability vision.
 
-The full video production is available on [YouTube](https://www.youtube.com/watch?v=ojHIYr9EAxk), where my part starts at 11:52 ([direct link](https://www.youtube.com/watch?v=ojHIYr9EAxk&t=712s)).
+The full video production is available on [YouTube](https://www.youtube.com/watch?v=ojHIYr9EAxk) where my part starts at 11:52 ([direct link](https://www.youtube.com/watch?v=ojHIYr9EAxk&t=712s)).
 
 {% include youtube.html content='https://www.youtube.com/embed/ojHIYr9EAxk?start=712' %}
 
