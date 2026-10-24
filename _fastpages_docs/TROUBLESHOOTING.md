@@ -27,7 +27,7 @@ See the [Upgrading guide](https://github.com/fastai/fastpages/blob/master/_fastp
 
 ## Step 4: See if there are errors in the build process of GitHub Actions.
 
-- [ ] In your GitHub repository, you will have a tab called **Actions**.  To find build errors, click on the `Event` dropdown list and select `push`.  Browse through tthe logs to see if you can find an error.  If you receive an error, read the error message and try to debug.
+- [ ] In your GitHub repository, you will have a tab called **Actions**.  To find build errors, click on the `Event` dropdown list and select `push`.  Browse through the logs to see if you can find an error.  If you receive an error, read the error message and try to debug.
 
 ## Step 5: Once you have performed all the above steps, post your issue in the fastai forums or a GitHub Issue.
 
@@ -55,7 +55,7 @@ See the [Upgrading guide](https://github.com/fastai/fastpages/blob/master/_fastp
 
     See this [tutorial on YAML](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/) for more information.
 
-    **Colons, tilda, asteriks and other characters may cause your front matter to break and for your posts to not render.**  If you violoate these conventions you often get an error that looks something like this:
+    **Colons, tildes, asterisks and other characters may cause your front matter to break and for your posts to not render.**  If you violate these conventions you often get an error that looks something like this:
 
     ```bash
     Error: YAML Exception reading ... (<unknown>): mapping values are not allowed

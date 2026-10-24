@@ -14,7 +14,7 @@ Hello :wave: @ulmefors!  Thank you for using fastpages!
 ### What to Expect After Merging This PR
 
 - GitHub Actions will build your site, which will take 2-3 minutes to complete.  **This will happen anytime you push changes to the master branch of your repository.**  You can monitor the logs of this if you like on the [Actions tab of your repo](https://github.com/ulmefors/home/actions).
-- Your GH-Pages Status badge on your README will eventually appear and be green, indicating your first sucessfull build.
+- Your GH-Pages Status badge on your README will eventually appear and be green, indicating your first successful build.
 - You can monitor the status of your site in the GitHub Pages section of your [repository settings](https://github.com/ulmefors/home/settings).
 
 If you are not using a custom domain, your website will appear at: 
@@ -33,7 +33,7 @@ If you are not using a custom domain, your website will appear at:
 2. Change the `url` and `baseurl` parameters in your `/_config.yml` file to reflect your custom domain.
 
 
-    Wondering how to setup a custom domain?  See [this article](https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p58).  You must add a CNAME file to the root of your master branch for the intructions in the article to work correctly.
+    Wondering how to setup a custom domain?  See [this article](https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p58).  You must add a CNAME file to the root of your master branch for the instructions in the article to work correctly.
 
 
 ## Questions
