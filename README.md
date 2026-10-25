@@ -1,4 +1,4 @@
-![](https://github.com/ulmefors/home/workflows/CI/badge.svg) ![](https://github.com/ulmefors/home/workflows/GH-Pages%20Status/badge.svg)
+![CI](https://github.com/ulmefors/home/workflows/CI/badge.svg) ![GH-Pages Status](https://github.com/ulmefors/home/workflows/GH-Pages%20Status/badge.svg)
 
 # home
 

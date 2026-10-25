@@ -31,5 +31,5 @@ Content flows through two stages: **conversion** (notebooks/word → markdown) a
 - `_layouts/`, `_includes/`, `_sass/` — standard Jekyll theming on top of the `minima` theme (pinned to a specific commit in `Gemfile`).
 - `_plugins/` — local Ruby plugins (footnotes). Note: local plugins don't work on GitHub Pages' default build, which is why this site uses a custom GitHub Actions build (`ci.yaml`) rather than the built-in Pages builder.
 - `_action_files/` — the fastpages "action" — Dockerfile plus Python/shell scripts (`nb2post.py`, `word2post.py`, etc.) that do the notebook/word conversion. Also referenced as a local action from `ci.yaml` (`uses: ./_action_files`).
-- `_site/` — Jekyll build output. Not committed except when locally built; ignore in edits.
-- `settings.ini` and `_config.yml` — fastpages/Jekyll settings. `_config.yml` is the one that matters for site behavior (title, plugins, analytics, pagination).
+- `_site/` — Jekyll build output. Gitignored and only present after a local build; ignore in edits.
+- `_action_files/settings.ini` and `_config.yml` — fastpages/Jekyll settings. The converter copies `_action_files/settings.ini` over the root `settings.ini`, so edit the former. `_config.yml` is the one that matters for site behavior (title, SEO metadata, analytics, theme options).
