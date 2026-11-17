@@ -880,7 +880,7 @@ img.emoji {
 }
 
 .post-content p, .post-content li {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #515151;
 }
 
@@ -927,7 +927,7 @@ li h3, li h4 {
 }
 li .post-meta-description {
   color: rgb(88, 88, 88);
-  font-size: 15px;
+  font-size: 0.9375rem;
   margin-top: 0.05rem !important;
   margin-bottom: 0.05rem !important;
 }
@@ -945,10 +945,10 @@ details.description:not([open]) summary::after {
 }
 
 .footnotes {
-  font-size: 12px !important;
+  font-size: 0.75rem !important;
 }
 .footnotes p, .footnotes li {
-  font-size: 12px !important;
+  font-size: 0.75rem !important;
 }
 
 .social-media-list .svg-icon {
@@ -959,10 +959,7 @@ details.description:not([open]) summary::after {
 .anchor-link {
   opacity: 0;
   padding-left: 0.375em;
-  \-webkit-text-stroke: 1.75px white;
-  \-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-  \-moz-transition: opacity 0.2s ease-in-out 0.1s;
-  \-ms-transition: opacity 0.2s ease-in-out 0.1s;
+  transition: opacity 0.2s ease-in-out 0.1s;
 }
 
 h1:hover .anchor-link,
@@ -971,6 +968,10 @@ h3:hover .anchor-link,
 h4:hover .anchor-link,
 h5:hover .anchor-link,
 h6:hover .anchor-link {
+  opacity: 1;
+}
+
+.anchor-link:focus-visible {
   opacity: 1;
 }
 
@@ -1001,7 +1002,7 @@ h6:hover .anchor-link {
 
 .category-tags-link {
   color: rgb(187, 129, 129) !important;
-  font-size: 13px !important;
+  font-size: 0.8125rem !important;
 }
 
 .js-search-results {
@@ -1013,7 +1014,7 @@ h6:hover .anchor-link {
 }
 
 .search-results-list-item .search-result-title {
-  font-size: 16px;
+  font-size: 1rem;
   color: #d9230f;
 }
 
@@ -1036,12 +1037,12 @@ h6:hover .anchor-link {
 
 .search-result-rel-date {
   color: rgb(109, 120, 138);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .search-result-preview {
   color: #777;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 0.02rem !important;
   margin-bottom: 0.02rem !important;
 }
@@ -1061,30 +1062,22 @@ table th {
   text-align: center !important;
 }
 
-::-webkit-scrollbar {
-  width: 14px;
-  height: 18px;
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 7px;
+    background-color: var(--scrollbar-thumb);
+  }
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background-color: var(--scrollbar-track);
+  }
 }
-
-::-webkit-scrollbar-thumb {
-  height: 6px;
-  border: 4px solid rgba(0, 0, 0, 0);
-  background-clip: padding-box;
-  -webkit-border-radius: 7px;
-  background-color: #9D9D9D;
-  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
-}
-
-::-webkit-scrollbar-button {
-  width: 0;
-  height: 0;
-  display: none;
-}
-
-::-webkit-scrollbar-corner {
-  background-color: transparent;
-}
-
 .output_text.output_execute_result pre {
   white-space: pre-wrap;
 }
@@ -1099,7 +1092,7 @@ table th {
 }
 
 pre code {
-  font-size: 15px !important;
+  font-size: 0.9375rem !important;
 }
 
 /*-----------------------------------*/
@@ -1150,7 +1143,7 @@ pre code {
 .output_area pre {
   border-left: 1px solid grey;
   margin-left: 1rem !important;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .code_cell table {
@@ -1297,7 +1290,20 @@ pre code {
 }
 
 p code {
-  font-size: 19px;
+  font-size: 1.1875rem;
+}
+
+:root {
+  color-scheme: dark;
+  accent-color: rgb(75, 186, 255);
+  --scrollbar-thumb: #8a8a8a;
+  --scrollbar-track: #121212;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+::selection {
+  background-color: rgba(75, 186, 255, 0.35);
+  color: rgba(255, 255, 255, 0.87);
 }
 
 html, body, input, textarea, select, button {
@@ -1332,10 +1338,6 @@ a:hover {
 .site-nav, .site-header {
   background-color: #121212;
   border-color: rgb(20.0705882353%, 20.0705882353%, 20.0705882353%);
-}
-
-* {
-  scrollbar-color: #121212 rgb(20.0705882353%, 20.0705882353%, 20.0705882353%);
 }
 
 pre, code {
@@ -1394,6 +1396,35 @@ canvas {
 
 li .post-meta-description {
   color: rgba(255, 255, 255, 0.69) !important;
+}
+
+/*----- Modern platform enhancements (all progressive: ignored where unsupported) -----*/
+@view-transition {
+  navigation: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+h1, h2, h3, h4, h5, h6,
+.post-title, .page-description {
+  text-wrap: balance;
+}
+
+.post-content :is(p, li, blockquote, figcaption),
+.post-meta-description {
+  text-wrap: pretty;
+}
+
+.youtube-embed {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 1.5rem auto;
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
