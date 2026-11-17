@@ -7,8 +7,14 @@
 
 
 {%- include favicons.html -%}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{%- comment -%}
+  Single Font Awesome copy for the whole site (solid icons in posts + brand icons in the
+  minima footer). The integrity hash is of the npm package's css/all.min.css, which
+  jsDelivr serves byte-for-byte. Recompute it if the version changes:
+  printf "sha384-%s" "$(openssl dgst -sha384 -binary all.min.css | openssl base64 -A)"
+{%- endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css" integrity="sha384-tGBVFh2h9Zcme3k9gJLbGqDpD+jRd419j/6N32rharcTZa1X6xgxug6pFMGonjxU" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 {%- if site.annotations -%}
 <script src="https://hypothes.is/embed.js" async></script>

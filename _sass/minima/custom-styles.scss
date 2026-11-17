@@ -10,3 +10,38 @@
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
 @import "minima/dark-mode";
+
+
+/*----- Modern platform enhancements (all progressive: ignored where unsupported) -----*/
+
+// Cross-document view transitions: a soft cross-fade between pages on same-origin
+// navigation. Turned off for visitors who ask for reduced motion.
+@view-transition {
+  navigation: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
+// Better line breaking: balanced headings, no single-word orphans in body copy.
+h1, h2, h3, h4, h5, h6,
+.post-title, .page-description {
+  text-wrap: balance;
+}
+.post-content :is(p, li, blockquote, figcaption),
+.post-meta-description {
+  text-wrap: pretty;
+}
+
+// Responsive, layout-stable YouTube embeds (replaces the old <center> + fixed size).
+.youtube-embed {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem auto;
+  border: 0;
+}

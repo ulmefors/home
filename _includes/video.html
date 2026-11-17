@@ -1,3 +1,3 @@
-<video class="codespaces-hero-video d-block width-full bg-white" alt="Codespaces demo" playsinline="" muted="" loop="" autoplay="">
+<video class="d-block width-full" playsinline muted loop autoplay {% if include.label %}aria-label="{{ include.label | escape }}"{% else %}aria-hidden="true"{% endif %}>
     <source type="video/mp4" src="{{ include.url }}">
 </video>
