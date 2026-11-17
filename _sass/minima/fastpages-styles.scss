@@ -123,8 +123,17 @@ details.description:not([open]) summary::after {
   transition: opacity 0.2s ease-in-out 0.1s;
 }
 
-// Also reveal on keyboard focus, not just mouse hover.
-:is(h1, h2, h3, h4, h5, h6):hover .anchor-link,
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  opacity: 1;
+}
+
+// Also reveal on keyboard focus. Kept as its own rule so a browser that rejects
+// :focus-visible doesn't drop the hover rule above along with it.
 .anchor-link:focus-visible {
   opacity: 1;
 }
