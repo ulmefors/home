@@ -7,7 +7,24 @@ $mild-blue: rgb(75, 186, 255);
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
-html, body, input, textarea, select, button {   
+// The site is dark-only: tell the browser so native UI (scrollbars, form controls,
+// the initial canvas) renders dark too. Must sit on the root element to theme the viewport.
+:root {
+  color-scheme: dark;
+  accent-color: $mild-blue;
+
+  // Thumb must stay >= 3:1 against the track (WCAG 1.4.11); #8a8a8a on #121212 is ~5.6:1.
+  --scrollbar-thumb: #8a8a8a;
+  --scrollbar-track: #{$dark-grey};
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+::selection {
+  background-color: rgba($mild-blue, 0.35);
+  color: $high-emph;
+}
+
+html, body, input, textarea, select, button {
   color: $high-emph !important;
   background-color: $dark-grey !important;
 }
@@ -39,10 +56,6 @@ a:hover {
 .site-nav, .site-header{
     background-color: $dark-grey;
     border-color: $overlay-light;
-}
-
-* {
-    scrollbar-color: $dark-grey $overlay-light;
 }
 
 pre, code {

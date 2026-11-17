@@ -4,6 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {%- comment -%}
+    The site is dark-only. Declaring it up front lets the browser paint a dark canvas,
+    scrollbars and form controls before the stylesheet arrives (no white flash), and
+    tints the mobile browser chrome to match.
+  {%- endcomment -%}
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#121212">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  {%- comment -%}
+    Smooth cross-document view transitions (opted into in CSS via @view-transition):
+    hold the first paint of the new page until the main content has been parsed so the
+    cross-fade never lands on a blank page.
+  {%- endcomment -%}
+  <link rel="expect" href="#main-content" blocking="render">
+
+  {%- comment -%}
     Keep utility pages (search, 404) out of the index while still letting crawlers
     follow the links on them. Set `noindex: true` in a page's front matter.
   {%- endcomment -%}
@@ -13,6 +29,7 @@
 
   {%- comment -%} Open the connections for render-blocking third-party assets early. {%- endcomment -%}
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   {%- if jekyll.environment == 'production' and site.plausible_analytics -%}
   <link rel="preconnect" href="https://analytics.gotit.click" crossorigin>
   {%- endif -%}
@@ -33,5 +50,30 @@
   {%- endif -%}
 
   {%- include custom-head.html -%}
+
+  {%- comment -%}
+    Speculation rules: prefetch same-origin pages when the visitor shows intent
+    (hover / pointerdown), so posts open near-instantly. Prefetch only (no prerender),
+    so analytics never fires for pages that are not actually visited. Browsers without
+    support ignore this block.
+  {%- endcomment -%}
+  <script type="speculationrules">
+    {
+      "prefetch": [{
+        "where": {
+          "and": [
+            { "href_matches": "/*" },
+            { "not": { "href_matches": "/assets/*" } },
+            { "not": { "href_matches": "/images/*" } },
+            { "not": { "href_matches": "/*.xml" } },
+            { "not": { "href_matches": "/*.json" } },
+            { "not": { "href_matches": "/*.pdf" } },
+            { "not": { "selector_matches": "[rel~=nofollow], [download]" } }
+          ]
+        },
+        "eagerness": "moderate"
+      }]
+    }
+  </script>
 
 </head>
